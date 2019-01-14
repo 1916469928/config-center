@@ -1,0 +1,14 @@
+server:
+  port: 8765
+spring:
+  application:
+    name: Service-Consumer
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.2.196:8761/eureka/
